@@ -1,0 +1,26 @@
+@charset "utf-8";
+// @use "../setting" as *;
+
+/* 共通設定
+======================================================= */
+.l-header {
+    // background-color: aqua;
+    &-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &--left {
+            display: flex;
+        }
+        &--right {
+            display: flex;
+            &-right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 105px;
+            }
+        }
+    }
+}
